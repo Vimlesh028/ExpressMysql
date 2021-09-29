@@ -2,10 +2,10 @@
 
 
 <div class="text-center center-div pt-5" id="login">
-    <div class="container w-25 border pb-5 ">
-    <h3>Welcome to Dashboard</h3>
-    <h5><%=locals.user?user:"User"%>h</h5>
-    <a href="/route/logout">Logout</a>
+    <div class="container border pb-5 " style="border: 2px solid black; background-color: silver;height: 200px;">
+    <h3 style="padding-top: 5px;">Welcome to Dashboard</h3>
+    <p><%=locals.user?user:"User"%></p>
+    <a href="/route/logout" style="color: sienna; font-weight: bold;">Logout</a>
     </div>
 </div>
         <%- include('footer') -%>

@@ -19,6 +19,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static('public'))
 app.use(express.static('public/assets'))
 app.use('/assets',express.static(path.join(__dirname,'public/assets')))
+app.use('/public',express.static(__dirname +'/public'));
 
 app.use(session({
   secret:uuidv4(),
